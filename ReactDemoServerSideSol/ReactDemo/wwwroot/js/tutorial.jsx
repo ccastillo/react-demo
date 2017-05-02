@@ -1,6 +1,8 @@
 ﻿function createRemarkable() {
-    var remarkable = (("undefined" != typeof global) && (global.Remarkable)) ? global.Remarkable : window.Remarkable;
-    return remarkable();
+    var remarkable = (("undefined" != typeof global) && (global.Remarkable)) ?
+        global.Remarkable :
+        window.Remarkable;
+    return new remarkable();
 }
 
 var Comment = React.createClass({
